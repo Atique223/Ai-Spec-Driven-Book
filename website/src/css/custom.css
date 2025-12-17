@@ -1,0 +1,288 @@
+/**
+ * Custom CSS for Physical AI & Humanoid Robotics Book
+ */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@300;400;500;700&display=swap');
+
+/* Custom color palette for robotics theme */
+:root {
+  --ifm-color-primary: #2c7dae;
+  --ifm-color-primary-dark: #256e9c;
+  --ifm-color-primary-darker: #236894;
+  --ifm-color-primary-darkest: #1d557a;
+  --ifm-color-primary-light: #3d8dbf;
+  --ifm-color-primary-lighter: #4a95c7;
+  --ifm-color-primary-lightest: #6aa8d3;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(44, 125, 174, 0.2);
+}
+
+/* Robotic/AI themed colors */
+:root {
+  --robotic-blue: #2c7dae;
+  --ai-purple: #6a5acd;
+  --sensor-green: #2e8b57;
+  --actuator-orange: #ff8c00;
+  --humanoid-teal: #20b2aa;
+}
+
+/* Apply custom fonts */
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+}
+
+/* Enhanced code blocks with robotics theme */
+.docusaurus-highlight-code-line {
+  background-color: rgba(44, 125, 174, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+/* Custom admonitions for robotics content */
+.alert--robotic {
+  --ifm-alert-background-color: #e6f4ff;
+  --ifm-alert-border-color: var(--robotic-blue);
+}
+
+.alert--ai {
+  --ifm-alert-background-color: #f0e6ff;
+  --ifm-alert-border-color: var(--ai-purple);
+}
+
+.alert--sensor {
+  --ifm-alert-background-color: #e6fff0;
+  --ifm-alert-border-color: var(--sensor-green);
+}
+
+.alert--actuator {
+  --ifm-alert-background-color: #fff0e6;
+  --ifm-alert-border-color: var(--actuator-orange);
+}
+
+/* Enhanced table styling */
+.markdown table {
+  display: table;
+  width: 100%;
+}
+
+.markdown table th,
+.markdown table td {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  padding: 0.75rem 1rem;
+}
+
+.markdown table th {
+  background-color: var(--ifm-color-emphasis-100);
+  font-weight: 600;
+}
+
+/* Custom styling for knowledge checks */
+.knowledge-check {
+  background-color: #f8f9fa;
+  border-left: 4px solid var(--robotic-blue);
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.knowledge-check h4 {
+  margin-top: 0;
+  color: var(--robotic-blue);
+}
+
+/* Enhanced navigation sidebar */
+.menu__list-item-collapsible .menu__link--sublist {
+  font-weight: 500;
+}
+
+/* Custom styling for exercise blocks */
+.practical-exercise {
+  border: 2px solid var(--actuator-orange);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  background-color: #fff8f0;
+}
+
+.practical-exercise h3 {
+  color: var(--actuator-orange);
+  border-bottom: 1px solid var(--actuator-orange);
+  padding-bottom: 0.5rem;
+}
+
+/* Enhanced code block styling */
+.prism-code {
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+/* Custom styling for robot/ai related content */
+.robot-component {
+  border: 1px solid var(--sensor-green);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #f0fff4;
+}
+
+.ai-concept {
+  border: 1px solid var(--ai-purple);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #f5f0ff;
+}
+
+/* Footer enhancements */
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.footer h4 {
+  color: white;
+}
+
+.footer a {
+  color: var(--ifm-color-primary-lighter);
+}
+
+.footer a:hover {
+  color: var(--ifm-color-primary-lightest);
+}
+
+/* Navbar enhancements */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive design improvements */
+@media (max-width: 996px) {
+  .navbar-sidebar__backdrop {
+    backdrop-filter: blur(5px);
+  }
+}
+
+/* Custom styling for the home page */
+.hero {
+  background: linear-gradient(135deg, #2c7dae 0%, #1d557a 100%);
+  color: white;
+}
+
+.hero__title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+
+.hero__subtitle {
+  opacity: 0.9;
+}
+
+/* Enhanced blockquote styling */
+blockquote {
+  border-left: 4px solid var(--robotic-blue);
+  background-color: #f0f8ff;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Custom button styling */
+.button--robotic {
+  background-color: var(--robotic-blue);
+  border-color: var(--robotic-blue);
+}
+
+.button--robotic:hover {
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+}
+
+/* Mathjax support if needed */
+.mjx-chtml {
+  outline: 0;
+}
+
+/* Improve readability */
+.markdown {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.markdown h1 {
+  font-size: 2.5rem;
+}
+
+.markdown h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid var(--ifm-color-emphasis-300);
+  padding-bottom: 0.5rem;
+}
+
+.markdown h3 {
+  font-size: 1.5rem;
+  color: var(--ifm-color-primary-darker);
+}
+
+/* Better list styling */
+.markdown ul,
+.markdown ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.markdown li {
+  margin-bottom: 0.5rem;
+}
+
+/* Enhanced image styling */
+.markdown img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Custom styling for inline code */
+.markdown code {
+  background-color: rgba(27, 31, 35, 0.05);
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  font-size: 0.85em;
+}
+
+/* Improve accessibility */
+.menu__list-item a:focus,
+.navbar__item:focus,
+.button:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Dark mode enhancements */
+[data-theme='dark'] {
+  --ifm-color-primary: #4a95c7;
+  --ifm-color-primary-dark: #3d8dbf;
+  --ifm-color-primary-darker: #3884b5;
+  --ifm-color-primary-darkest: #2e6e99;
+  --ifm-color-primary-light: #5aa0cc;
+  --ifm-color-primary-lighter: #6aa8d3;
+  --ifm-color-primary-lightest: #8bbce0;
+  --docusaurus-highlighted-code-line-bg: rgba(74, 149, 199, 0.3);
+}

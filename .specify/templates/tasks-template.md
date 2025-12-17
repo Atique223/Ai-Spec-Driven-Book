@@ -51,6 +51,8 @@ description: "Task list template for feature implementation"
 - [ ] T001 Create project structure per implementation plan
 - [ ] T002 Initialize [language] project with [framework] dependencies
 - [ ] T003 [P] Configure linting and formatting tools
+- [ ] T004 [P] Set up Spec-Kit Plus compliance checking
+- [ ] T005 [P] Configure content verification for reproducibility
 
 ---
 

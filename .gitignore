@@ -1,0 +1,78 @@
+# Dependencies
+node_modules/
+jspm_packages/
+
+# Production builds
+build/
+dist/
+out/
+
+# Environment variables
+.env*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+.nyc_output/
+
+# TypeScript/JavaScript build output
+*.tsbuildinfo
+.next/
+.nuxt/
+dist/
+
+# Docusaurus
+.docusaurus/
+.cache/
+
+# Database
+*.db
+*.db-journal
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# CI/CD
+.semaphore/
+.circleci/
+
+# IDE
+.vs/
+*.tmp
+*.temp
